@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
-  "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "id": "aim-assist",
+  "version": "1.0",
+  "name": "AimAssist",
+  "description": "An undetectable AimAssist",
   "authors": [
     "seasnail"
   ],
@@ -14,11 +14,11 @@
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.cassady.advancedaim.AddonTemplate"
+      "com.cassady.advancedaim.AdvancedAim"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "advancedaim.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25",
@@ -30,7 +30,7 @@
   },
   "depends": {
     "java": ">=21",
-    "minecraft": ["${mc_version}"],
+    "minecraft": "1.21.8",
     "meteor-client": "*"
   }
 }
